@@ -1,0 +1,47 @@
+@import '../../../App.scss';
+
+.user-nav {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  padding: 0 0 0 20px;
+}
+.user-nav__link {
+  text-decoration: none;
+  display: block;
+    
+  &:hover {
+    opacity: 0.6;
+  }
+  
+  &:active {
+    opacity: 0.3;
+  }
+    
+  &::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.user-nav__link--favorites  {
+  margin-right: 19px;
+
+  &::before {
+    width: 24px;
+    height: 21px;
+    background-image: url("../../../assets/images/heart.png");
+  }
+}
+
+.user-nav__link--cart {
+  margin-right: 20px;
+    
+  &::before {
+    width: 31px;
+    height: 27px;
+    background-image: url("../../../assets/images/Bag.png");
+  }
+}
