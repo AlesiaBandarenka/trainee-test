@@ -1,9 +1,16 @@
 @font-face {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   src: local('Inter'), local('Inter-Bold'),
-    url('../src/assets/fonts/fonts.css') format('woff2');
+    url('../src/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('woff2');
+}
+@font-face {
+  font-family: 'Sree Krushnadevaraya';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sree Krushnadevaraya'), local('Sree Krushnadevaraya-Bold'),
+    url('../src/assets/fonts/SreeKrushnadevaraya/Sree\ Krushnadevaraya\ Regular.otf') format('woff2');
 }
 
 body {
