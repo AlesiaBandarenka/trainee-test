@@ -1,9 +1,30 @@
+@import '../../App.scss';
+
 .main-header {
   background-color: #8EB226;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 84px;
-  min-width: 1439px;
+  min-width: 1200px;
   width: 1439px;
+  margin-bottom: 5px;
+}
+.main-header__container {
+  flex-direction: column;
+}
+.main-header__menu-toggle {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  align-self: center;
+  display: block;
+  padding: 2px;
+  background-color: #ffffff;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in;
+  color: #c4c4c4;
+}
+.main-header__menu-toggle {
+  display: none;
 }
