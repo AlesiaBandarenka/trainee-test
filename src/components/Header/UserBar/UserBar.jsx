@@ -17,7 +17,9 @@ function UserBar(productsInCart) {
 			<li className='user-nav__item'>
 				{productsInCart !== 0 && (
 					<div className='user-nav__link user-nav__link--cart-add'>
-						{productsCounter}
+						<p className='user-nav__link user-nav__link--cart-number'>
+							{productsCounter}
+						</p>
 					</div>
 				)}
 				<a className='user-nav__link user-nav__link--cart' href='#'>
