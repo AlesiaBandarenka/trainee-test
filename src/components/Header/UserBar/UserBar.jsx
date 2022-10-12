@@ -15,7 +15,7 @@ function UserBar(productsInCart) {
 				</a>
 			</li>
 			<li className='user-nav__item'>
-				{productsInCart !== 0 && (
+				{productsCounter !== 0 && (
 					<div className='user-nav__link user-nav__link--cart-add'>
 						<p className='user-nav__link user-nav__link--cart-number'>
 							{productsCounter}
