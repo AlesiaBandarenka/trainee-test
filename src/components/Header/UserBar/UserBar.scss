@@ -45,3 +45,16 @@
     background-image: url("../../../assets/images/Bag.png");
   }
 }
+.user-nav__link--cart-add {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #83B282;
+  position: absolute;
+  margin-left: 18px;
+  margin-top: -10px; 
+  text-align: center;
+  font-size: 10px;
+  padding: 3px;
+}

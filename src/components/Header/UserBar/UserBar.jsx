@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import './UserBar.scss';
 
 function UserBar(productsInCart) {
-	console.log(productsInCart);
+	const productsCounter = productsInCart.productsInCart.productsInCart;
+
 	return (
 		<ul className='user-nav'>
 			<li className='user-nav__item'>
@@ -14,8 +15,10 @@ function UserBar(productsInCart) {
 				</a>
 			</li>
 			<li className='user-nav__item'>
-				{productsInCart && (
-					<a className='user-nav__link user-nav__link--cart-add'></a>
+				{productsInCart !== 0 && (
+					<div className='user-nav__link user-nav__link--cart-add'>
+						{productsCounter}
+					</div>
 				)}
 				<a className='user-nav__link user-nav__link--cart' href='#'>
 					<span className='visually-hidden'>Shopping cart</span>
