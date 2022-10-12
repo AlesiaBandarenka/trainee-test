@@ -5,6 +5,7 @@ import './Promo.scss';
 import sale from '../../assets/images/Group 1659.png';
 import bottleOrdinary from '../../assets/images/Rectangle 59.png';
 import handCream from '../../assets/images/Rectangle 60.png';
+import Button from '../common/Button/Button';
 
 export function Promo() {
 	return (
@@ -18,6 +19,9 @@ export function Promo() {
 			<div className='main__promo-back-column'>
 				<img className='main__promo-back-column--sale' src={sale} alt='Sale' />
 				<div className='main__promo-back-column--item1'>
+					<div className='main__promo-back-column--btn'>
+						<Button buttonText='Shop Now' />
+					</div>
 					<a href='#'>
 						<div className='main__promo-back-column--link1'>
 							<p className='main__promo-back-column--link1-text'>
