@@ -2,14 +2,13 @@
 
 .main-header {
   background-color: #8EB226;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 84px;
-  min-width: 1200px;
-  width: 1439px;
   margin-bottom: 5px;
-}
-.main-header__container {
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // @media (max-width: 590px) {
+
+  // }
 }

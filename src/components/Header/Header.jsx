@@ -11,12 +11,16 @@ export function Header(props) {
 	const { productsInCart, onChange, searchTerm } = props;
 
 	return (
-		<header className='main-header'>
-			<Logo />
-			<NavBar />
-			<SearchBar onChange={onChange} searchTerm={searchTerm} />
-			<UserBar productsInCart={productsInCart} />
-		</header>
+		<>
+			<header className='main-header'>
+				<h1 className='visually-hidden'>Online beauty store</h1>
+				<Logo />
+				<NavBar />
+				<SearchBar onChange={onChange} searchTerm={searchTerm} />
+				<UserBar productsInCart={productsInCart} />
+			</header>
+			<SearchBar onChange={onChange} searchTerm={searchTerm} mobile />
+		</>
 	);
 }
 

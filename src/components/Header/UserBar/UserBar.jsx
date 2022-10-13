@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 import './UserBar.scss';
 
-function UserBar(productsInCart) {
-	const productsCounter = productsInCart.productsInCart.productsInCart;
+function UserBar({ productsInCart }) {
+	const productsCounter = productsInCart;
 
 	return (
 		<ul className='user-nav'>
