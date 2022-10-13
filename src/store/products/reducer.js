@@ -1,24 +1,21 @@
-import * as actionTypes from './actionTypes';
+import { actionTypes } from './actionTypes';
 
 const productsInitialState = {
 	products: [],
-	showSuccessModal: false,
 };
 
-const executeGetProductsSuccess = (state, action) => {
-	return {
-		...state,
-		products: action.products,
-	};
-};
-
-const reducer = (state = productsInitialState, action) => {
+const products = (state = productsInitialState, action) => {
 	switch (action.type) {
-		case actionTypes.GET_PRODUCTS_SUCCESS:
-			return executeGetProductsSuccess(state, action);
+		case actionTypes.PRODUCTS_GET.LOADING:
+			return { ...state, loading: true, error: null };
+		case actionTypes.PRODUCTS_GET.SUCCESS:
+			return { ...state, loading: false, products: action.payload };
+		case actionTypes.PRODUCTS_GET.ERROR:
+			return { ...state, loading: false, error: action.payload };
+
 		default:
 			return state;
 	}
 };
 
-export default reducer;
+export default products;

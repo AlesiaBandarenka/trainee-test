@@ -35,7 +35,7 @@ export const products = [
 	},
 	{
 		id: 2,
-		name: 'Ut labore quas commodi.',
+		name: 'Little bottle',
 		description:
 			'Magni at rerum id sunt molestiae commodi. Ex quibusdam sint fugit autem quo. Nisi quos alias facere.',
 		ean: '7165278011257',
@@ -69,7 +69,7 @@ export const products = [
 	},
 	{
 		id: 3,
-		name: 'Ut labore quas commodi.',
+		name: 'More little cream.',
 		description:
 			'Magni at rerum id sunt molestiae commodi. Ex quibusdam sint fugit autem quo. Nisi quos alias facere.',
 		ean: '7165278011257',
