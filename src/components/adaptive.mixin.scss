@@ -1,0 +1,14 @@
+@use 'sass:map';
+
+$breakpoints: (
+  stretch: 1200px,
+  midi: 750px,
+  small: 320px,
+);
+
+@mixin max-bp($breakpoint) {
+  @media(max-width: map.get($breakpoints, $breakpoint))
+  {
+    @content;
+  }
+}
