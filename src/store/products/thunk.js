@@ -10,7 +10,7 @@ export function productsGet() {
 		dispatch(productsGetLoading());
 		try {
 			const res = await getProducts();
-			dispatch(productsGetSuccess(res.data.result));
+			dispatch(productsGetSuccess(res.data.data));
 		} catch (error) {
 			dispatch(productsGetError(error));
 		}
