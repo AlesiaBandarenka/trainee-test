@@ -36,7 +36,6 @@ a {
 }
 .main__promo-back-column--sale {
   height: 323px; 
-  width: 281px;
   position: relative;
   top: 290px;
   left: 350px;
@@ -76,4 +75,64 @@ a {
   position: relative;
   bottom: 30px;
   left: 285px;
+}
+
+@media (max-width: 1100px) {
+  .main__promo-back-column--sale {
+    left: 200px;
+  }
+  .main__promo-back-column--btn {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main__promo-back-column--sale {
+    left: 165px;
+  }
+  .main__promo-back-column--btn {
+    top: 75px;
+  }
+  .main__promo-back-column--img1,
+  .main__promo-back-column--img2,
+  .main__promo-back-column--link1,
+  .main__promo-back-column--link2 {
+    display: none;
+}
+}
+@media (max-width: 830px) {
+  .main__promo-back-column--sale {
+    display: none;
+  }
+  .main__promo-back-column--btn {
+    top: 425px;
+    left: 450px;
+  }
+}
+@media (max-width: 760px) {
+  .main__promo-img-column--text {
+    left: 400px;
+  }
+  .main__promo-back-column--btn {
+    top: 425px;
+    left: 450px;
+  }
+}
+@media (max-width: 509px) {
+  .main__promo {
+    height: 285px;
+  }
+  .main__promo-img-column {
+    display: none;
+  }
+  .main__promo-back-column {
+    background-image: url('../../assets/images/mobileBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: left right;
+  }
+  .main__promo-back-column--btn {
+    position: fixed;
+    top: 245px;
+    left: 150px;
+  }
 }
