@@ -1,0 +1,53 @@
+@import '../../../App.scss';
+
+.main-header__menu-toggle {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  align-self: center;
+  display: block;
+  padding: 2px;
+  background-color: #ffffff;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in;
+  color: #c4c4c4;
+    &:focus {
+      outline: 0;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+&,
+&::after,
+&::before {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+  background-image: url('../../../assets/images/toggle.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 25px;
+  background-position: left, right;
+}
+
+&,
+&::after {
+  margin-bottom: 0;
+}
+
+& {
+  margin-bottom: 9px;
+}
+}
+// .page-header__menu-toggle--active .page-header__menu-toggle-bar {
+//   opacity: 0;
+// }
+
+// .page-header__menu-toggle--active::before {
+//   transform: translateY(12px) rotateZ(135deg);
+// }
+
+// .page-header__menu-toggle--active::after {
+//   transform: translateY(-12px) rotateZ(-135deg);
+// }
