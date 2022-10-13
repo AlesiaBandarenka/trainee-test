@@ -1,16 +1,17 @@
 import React from 'react';
 
-import ProductCard from './ProductCard/ProductCard';
+import PropTypes from 'prop-types';
 
-import { products } from '../../store/mockedData';
+import ProductCard from './ProductCard/ProductCard';
 
 import './ProductList.scss';
 
 export function ProductList(props) {
-	const { onClick } = props;
+	const { onClick, filteredProducts } = props;
+
 	return (
 		<ul className='main__products-list'>
-			{products.map((product) => (
+			{filteredProducts.map((product) => (
 				<ProductCard
 					key={product.id.toString()}
 					id={product.id}
@@ -24,3 +25,7 @@ export function ProductList(props) {
 		</ul>
 	);
 }
+
+ProductList.propTypes = {
+	onClick: PropTypes.func,
+};
