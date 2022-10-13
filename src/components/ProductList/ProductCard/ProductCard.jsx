@@ -1,11 +1,13 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import './ProductCard.scss';
 
 function ProductCard(props) {
-	const { id, title, description, price, image } = props;
+	const { id, title, description, price, image, onClick } = props;
 	return (
-		<li class='card-list-container__item'>
+		<li className='card-list-container__item'>
 			<div className='card-item'>
 				<a className='card-item__link' href='#'>
 					<img
@@ -26,8 +28,9 @@ function ProductCard(props) {
 					</div>
 					<div className='card-item__column--button'>
 						<button
-							className='card-item__button card-item__button--cart button'
+							className='card-item__button'
 							type='button'
+							onClick={onClick}
 						>
 							<span className='visually-hidden'>Добавить в корзину.</span>
 						</button>
@@ -37,4 +40,14 @@ function ProductCard(props) {
 		</li>
 	);
 }
+
+ProductCard.propTypes = {
+	id: PropTypes.number,
+	title: PropTypes.string,
+	description: PropTypes.string,
+	price: PropTypes.string,
+	image: PropTypes.string,
+	onClick: PropTypes.func,
+};
+
 export default ProductCard;
