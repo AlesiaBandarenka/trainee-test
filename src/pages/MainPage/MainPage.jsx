@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import { Header } from '../../components/Header/Header';
 import { Promo } from '../../components/Promo/Promo';
@@ -7,10 +8,10 @@ import { ProductList } from '../../components/ProductList/ProductList';
 
 import './MainPage.scss';
 
-import { products } from '../../store/mockedData';
-// import Test from '../../components/Test/Test';
+// import { products } from '../../store/mockedData';
 
 export function MainPage() {
+	const [products, setProducts] = useState([]);
 	const [counter, setCounter] = useState(0);
 	const [searchTerm, setSearchTerm] = useState('');
 	const [searchResults, setSearchResults] = useState([]);
@@ -20,6 +21,13 @@ export function MainPage() {
 	const handleChange = (event) => {
 		setSearchTerm(event.target.value);
 	};
+
+	useEffect(() => {
+		axios.get(`https://fakerapi.it/api/v1/products`).then((res) => {
+			const productsRes = res.data.data;
+			setProducts(productsRes);
+		});
+	}, []);
 
 	useEffect(() => {
 		const results = products.filter((product) =>
@@ -38,7 +46,6 @@ export function MainPage() {
 			<Promo />
 			<Separator title='Best Selling Products' />
 			<ProductList onClick={inc} filteredProducts={searchResults} />
-			{/* <Test /> */}
 		</div>
 	);
 }
