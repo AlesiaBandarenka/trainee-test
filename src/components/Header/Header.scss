@@ -13,18 +13,3 @@
 .main-header__container {
   flex-direction: column;
 }
-.main-header__menu-toggle {
-  border: 0;
-  font: inherit;
-  cursor: pointer;
-  align-self: center;
-  display: block;
-  padding: 2px;
-  background-color: #ffffff;
-  transform: translateX(0);
-  transition: transform 0.3s ease-in;
-  color: #c4c4c4;
-}
-.main-header__menu-toggle {
-  display: none;
-}
