@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -10,11 +10,12 @@ import { Provider } from 'react-redux';
 import reducers from './store/index';
 
 let store = legacy_createStore(reducers, applyMiddleware(thunk));
-ReactDOM.render(
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+root.render(
 	<Provider store={store}>
 		<App />
-	</Provider>,
-	document.getElementById('root')
+	</Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
