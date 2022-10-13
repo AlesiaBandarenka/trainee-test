@@ -1,0 +1,66 @@
+@import '../../../App.scss';
+
+.user-nav {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  padding: 0 0 0 20px;
+}
+.user-nav__link {
+  text-decoration: none;
+  display: block;
+    
+  &:hover {
+    opacity: 0.6;
+  }
+  
+  &:active {
+    opacity: 0.3;
+  }
+    
+  &::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.user-nav__link--favorites  {
+  margin-right: 19px;
+
+  &::before {
+    width: 24px;
+    height: 21px;
+    background-image: url("../../../assets/images/heart.png");
+  }
+}
+
+.user-nav__link--cart {
+  margin-right: 20px;
+    
+  &::before {
+    width: 31px;
+    height: 27px;
+    background-image: url("../../../assets/images/Bag.png");
+  }
+}
+
+.user-nav__link--cart-add {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #83B282;
+  position: absolute;
+  margin-left: 18px;
+  margin-top: -10px; 
+  text-align: center;
+  font-size: 10px;
+  padding: 3px;
+}
+
+.user-nav__link--cart-number {
+  display: block;
+  margin-top: -3px;
+}
