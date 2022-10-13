@@ -1,11 +1,9 @@
 .main__products-list {
   margin: 0 auto;
-  min-width: 1200px;
-  width: 1439px;
   display: flex;
-  box-sizing: border-box;
+  padding: 0;
   flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
+  justify-content: center;
+  list-style-type: none;
   font-family: 'Sree Krushnadevaraya', 'Times New Roman', Times, serif;
 }
