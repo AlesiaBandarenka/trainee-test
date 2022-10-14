@@ -2,7 +2,7 @@
   "name": "trainee-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AlesiaBandarenka.github.io/trainee-test",
+  "homepage": "https://alesiabandarenka.github.io/trainee-test/",
   "dependencies": {
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
