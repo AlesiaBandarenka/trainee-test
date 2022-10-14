@@ -7,7 +7,7 @@ import ProductCard from './ProductCard/ProductCard';
 import './ProductList.scss';
 
 export function ProductList(props) {
-	const { onClick, filteredProducts } = props;
+	const { onClick, onTouchEnd, filteredProducts } = props;
 
 	return (
 		<ul className='main__products-list'>
@@ -20,6 +20,7 @@ export function ProductList(props) {
 					description={product.description}
 					price={product.price}
 					onClick={onClick}
+					onTouchEnd={onTouchEnd}
 				/>
 			))}
 		</ul>

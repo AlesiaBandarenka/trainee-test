@@ -45,7 +45,11 @@ export function MainPage() {
 			/>
 			<Promo />
 			<Separator title='Best Selling Products' />
-			<ProductList onClick={inc} filteredProducts={searchResults} />
+			<ProductList
+				onClick={inc}
+				onTouchEnd={inc}
+				filteredProducts={searchResults}
+			/>
 		</div>
 	);
 }

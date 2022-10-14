@@ -38,6 +38,7 @@ function NavBar() {
 					className='main-header__menu-toggle'
 					type='button'
 					onClick={() => setOpen(!open)}
+					onTouchEnd={() => setOpen(!open)}
 				></button>
 				{open && (
 					<>

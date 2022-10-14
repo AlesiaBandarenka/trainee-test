@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import './ProductCard.scss';
 
 function ProductCard(props) {
-	const { id, title, description, price, image, onClick } = props;
+	const { id, title, description, price, image, onClick, onTouchEnd } = props;
+
 	return (
 		<li className='card-list-container__item'>
 			<div className='card-item'>
@@ -31,6 +32,7 @@ function ProductCard(props) {
 							className='card-item__button'
 							type='button'
 							onClick={onClick}
+							onTouchEnd={onTouchEnd}
 						>
 							<span className='visually-hidden'>Добавить в корзину.</span>
 						</button>
