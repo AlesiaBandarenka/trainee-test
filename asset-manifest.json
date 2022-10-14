@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/trainee-test/static/css/main.64db2fe5.css",
-    "main.js": "/trainee-test/static/js/main.511afdd0.js",
+    "main.css": "/trainee-test/static/css/main.c27b1032.css",
+    "main.js": "/trainee-test/static/js/main.a980f923.js",
     "static/js/787.4e9b9291.chunk.js": "/trainee-test/static/js/787.4e9b9291.chunk.js",
     "static/media/Inter-VariableFont_slnt,wght.ttf": "/trainee-test/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
     "static/media/Sree Krushnadevaraya Regular.otf": "/trainee-test/static/media/Sree Krushnadevaraya Regular.29528a56fd038f6b9af2.otf",
@@ -12,12 +12,12 @@
     "static/media/toggle.png": "/trainee-test/static/media/toggle.8f7c40cf67af9f9c723a.png",
     "static/media/Group 1659.png": "/trainee-test/static/media/Group 1659.7de9333dd9439b4bd794.png",
     "index.html": "/trainee-test/index.html",
-    "main.64db2fe5.css.map": "/trainee-test/static/css/main.64db2fe5.css.map",
-    "main.511afdd0.js.map": "/trainee-test/static/js/main.511afdd0.js.map",
+    "main.c27b1032.css.map": "/trainee-test/static/css/main.c27b1032.css.map",
+    "main.a980f923.js.map": "/trainee-test/static/js/main.a980f923.js.map",
     "787.4e9b9291.chunk.js.map": "/trainee-test/static/js/787.4e9b9291.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64db2fe5.css",
-    "static/js/main.511afdd0.js"
+    "static/css/main.c27b1032.css",
+    "static/js/main.a980f923.js"
   ]
 }
