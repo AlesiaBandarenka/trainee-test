@@ -7,8 +7,8 @@ function App() {
 	return (
 		<Router>
 			<Routes>
+				<Route exact path='/trainee-test' element={<MainPage />} />
 				<Route exact path='/' element={<MainPage />} />
-				<Route exact path='/products' element={<MainPage />} />
 			</Routes>
 		</Router>
 	);
